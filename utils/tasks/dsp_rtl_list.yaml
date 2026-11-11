@@ -106,6 +106,12 @@ square_32:
   top_module: square_32
   cocotb_dir: dsp/mult/square_32
 
+mult_8_feedback:
+  source:
+    - dsp/mult/mult_8_feedback/mult_8_feedback.v
+  top_module: mult_8_feedback
+  cocotb_dir: dsp/mult/mult_8_feedback
+
 mult8:
   source:
     - dsp/mult/mult8/mult8.v
