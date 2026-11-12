@@ -43,7 +43,9 @@ async def test_preload_and_compare(dut):
 
     await RisingEdge(dut.clk)
     await ReadOnly()
-    assert int(dut.count.value) == 0x2A, f"Expected preloaded value 0x2A, got {hex(int(dut.count.value))}"
+    assert (
+        int(dut.count.value) == 0x2A
+    ), f"Expected preloaded value 0x2A, got {hex(int(dut.count.value))}"
     assert int(dut.match.value) == 1, "Expected match=1 after preloading compare_val"
 
     await FallingEdge(dut.clk)
@@ -67,7 +69,9 @@ async def test_up_down_counting(dut):
     # Capture preload on rising edge
     await RisingEdge(dut.clk)
     await ReadOnly()
-    assert int(dut.count.value) == max_val - 1, f"Expected {max_val - 1}, got {int(dut.count.value)}"
+    assert (
+        int(dut.count.value) == max_val - 1
+    ), f"Expected {max_val - 1}, got {int(dut.count.value)}"
 
     # Release load and enable up-counting on falling edge
     await FallingEdge(dut.clk)
@@ -92,10 +96,13 @@ async def test_up_down_counting(dut):
     # Cycle 3: 0 -> max_val (underflow)
     await RisingEdge(dut.clk)
     await ReadOnly()
-    assert int(dut.count.value) == max_val, f"Expected underflow to {max_val}, got {int(dut.count.value)}"
+    assert (
+        int(dut.count.value) == max_val
+    ), f"Expected underflow to {max_val}, got {int(dut.count.value)}"
 
     # Cycle 4: max_val -> max_val - 1
     await RisingEdge(dut.clk)
     await ReadOnly()
-    assert int(dut.count.value) == max_val - 1, f"Expected {max_val - 1}, got {int(dut.count.value)}"
-
+    assert (
+        int(dut.count.value) == max_val - 1
+    ), f"Expected {max_val - 1}, got {int(dut.count.value)}"
