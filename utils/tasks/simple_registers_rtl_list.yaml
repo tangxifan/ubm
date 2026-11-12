@@ -70,6 +70,12 @@ signal_gen_reset_generator:
   top_module: reset_generator
   cocotb_dir: simple_registers/signal_gen/reset_generator
 
+counterupdown8_preload_compare_async_resetn:
+  source:
+    - simple_registers/counters/counterupdown8_preload_compare_async_resetn/counterupdown8_preload_compare_async_resetn.v
+  top_module: counterupdown8_preload_compare_async_resetn
+  cocotb_dir: simple_registers/counters/counterupdown8_preload_compare_async_resetn
+
 counter128_async_reset:
   source:
     - simple_registers/counters/counter128_async_reset/counter128_async_reset.v
