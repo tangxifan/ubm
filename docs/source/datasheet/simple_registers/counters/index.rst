@@ -15,3 +15,4 @@ Counters
    counterup32_1clk_async_reset_n_instances
    counterup36_8_2clk_async_resetp
    counterupn_1clk_dualedge_async_resetp
+   counterupdown8_preload_compare_async_resetn
