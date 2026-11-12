@@ -1,4 +1,4 @@
-module counter_up_down_preload_compare #(
+module counterupdown8_preload_compare_async_resetn #(
     parameter WIDTH = 8
 ) (
     input  wire             clk,
