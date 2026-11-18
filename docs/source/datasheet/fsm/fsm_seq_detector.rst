@@ -17,7 +17,7 @@ See details in ``fsm/fsm_seq_detector``
 Block Diagram
 ~~~~~~~~~~~~~
 
-.. figure:: ./figures/fsm_seq_detector_schematic.svg
+.. figure:: ./figures/fsm_seq_detector.svg
   :width: 60%
   :alt: fsm_seq_detector schematic
 
