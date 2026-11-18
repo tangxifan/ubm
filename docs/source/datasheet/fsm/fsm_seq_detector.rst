@@ -18,7 +18,7 @@ Block Diagram
 ~~~~~~~~~~~~~
 
 .. figure:: ./figures/fsm_seq_detector.svg
-  :width: 60%
+  :width: 100%
   :alt: fsm_seq_detector schematic
 
   fsm_seq_detector schematic
