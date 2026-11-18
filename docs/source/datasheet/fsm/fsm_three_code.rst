@@ -17,8 +17,8 @@ See details in ``fsm/FSM_three_code``
 Block Diagram
 ~~~~~~~~~~~~~
 
-.. figure:: ./figures/FSM_top_schematic.svg
-  :width: 60%
+.. figure:: ./figures/fsm_three_code.svg
+  :width: 100%
   :alt: FSM_top schematic
 
   FSM_top schematic
